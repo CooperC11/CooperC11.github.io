@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooper's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nav Menu -->
+    <header class="navmenu">
+        <nav id="flex">
+            <button onclick="scrollToSection('hero')"><strong>Home</strong></button>
+            <button onclick="scrollToSection('skills')"><strong>Skills</strong></button>
+            <button onclick="scrollToSection('mission')"><strong>Mission</strong></button>
+            <button onclick="scrollToSection('contact')"><strong>Contacts</strong></button>
+            <a href="https://www.docdroid.net/file/view/BLkW4Ej/dummy-resume-pdf.jpg" target="_blank" download="resume.jpg" class="resume-button">
+                <strong>Resume</strong>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Cooper's Portfolio</h1>
+        <h2>"Why I am simply the better choice."</h2>
+        <button class="cta" onclick="scrollToSection('contact')">Contact Me</button>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML - Comfortable building structured and accessible web pages with modern HTML.</li>
+            <li>CSS - Experienced in styling web pages with Flexbox, Grid, and responsive design techniques.</li>
+            <li>Python - Proficient in Python for writing scripts, solving problems, and using libraries for data manipulation.</li>
+            <li>Windows OS - Comfortable navigating and using Windows, including basic system administration tasks and troubleshooting.</li>
+          </ul>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section id="mission">
+        <h2>Mission</h2>
+        <p>To build my knowledge and understanding of IT as much as possible.</p>
+        <h2>Vision</h2>
+        <p>Eventually, when I am finished in my pursuit of knowledge. I want to start my own IT company.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email: cooperbcharlton@gmail.com</strong></p>
+        <p><strong>Phone: 902-499-6777</strong></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Cooper's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll Function Script -->
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
